@@ -13,46 +13,82 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     
-    <title>Document</title>
+    <title>TO DO List</title>
+
 </head>
 <body>
-    <div class="container">
+  <div class="container mt-5 py-3 bg-secondary rounded">
 
-        <!-- Navbar -->
-        <div class="row bluebor" id="navigation">
-            <header class="p-2 m-2">                
-                  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-                     <img src="./img/add.svg" height="20" alt="">
-                    </a>
-            
-                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                      <li><a href="#" class="nav-link p-2 link-dark">TO DO List</a></li>
-                      <li><a href="#" class="nav-link p-2 link-secondary">Completed tasks</a></li>
-                    </ul>
-            
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                      <input type="search" class="form-control" placeholder="Search for the task..." aria-label="Search">
-                    </form>            
-                                    
-                
-                  </div>                
-              </header>
-        </div>
-        
-    <!-- Tasks -->
-        <div class="row bluebor">
-            <div class="col redbor">Mark as done button</div>
-            <div class="col redbor">Task description</div>
-            <div class="col redbor">Options button</div>
-        </div>
-            
-    <!-- Add task button -->
-        <div class="row add-new-task bluebor">
-            <div class="col-1 redbor">+</div>
-            <div class="col-11 redbor">Add new task</div>
-        </div>
+      <!-- Navbar -->
+    <div class="d-flex flex-row align-items-center mb-3 bluebor">
+      <div>
+        <button type="button" class="btn btn-dark"><img src="./img/add.svg" height="40" alt="add new task button"></button>
+      </div>
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link p-2 link-light">TO DO List</a></li>
+        <li><a href="#" class="nav-link p-2 link-dark">Completed tasks</a></li>
+      </ul>
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input type="search" class="form-control" placeholder="Search for the task..." aria-label="Search">
+      </form>                    
     </div>
+        
+      <!-- Task1 -->
+    <div class="row d-grid gap-2 col-11 mx-auto bluebor">     
+      <button class="btn btn-light text-start my-2 ms-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+        This is the task No. 1
+      </button>              
+      <div class="collapse" id="collapseExample1">
+        <div class="card card-body ms-4 mb-4 d-flex flex-row align-items-center">
+          <input type="text" class="form-control ms-2 me-2" id="exampleFormControlInput1" placeholder="Type in the task description">
+          <button type="submit" class="btn btn-success ms-1">💾</button>
+          <button type="submit" class="btn btn-danger ms-1">🗑</button>          
+        </div>
+      </div>
+    </div>
+
+      <!-- Task2 -->
+    <div class="row d-grid gap-2 col-11 mx-auto bluebor">     
+      <button class="btn btn-light text-start my-2 ms-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+        This is the task No. 2
+      </button>              
+      <div class="collapse" id="collapseExample2">
+        <div class="card card-body ms-4 mb-4 d-flex flex-row align-items-center">
+          <input type="text" class="form-control ms-2 me-2" id="exampleFormControlInput1" placeholder="Type in the task description">
+          <button type="submit" class="btn btn-success ms-1">💾</button>
+          <button type="submit" class="btn btn-danger ms-1">🗑</button>          
+        </div>
+      </div>
+    </div>
+
+      <!-- Task3 -->
+    <div class="row d-grid gap-2 col-11 mx-auto bluebor">     
+      <button class="btn btn-light text-start my-2 ms-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+        This is the task No. 3
+      </button>              
+      <div class="collapse" id="collapseExample3">
+        <div class="card card-body ms-4 mb-4 d-flex flex-row align-items-center">
+          <input type="text" class="form-control ms-2 me-2" id="exampleFormControlInput1" placeholder="Type in the task description">
+          <button type="submit" class="btn btn-success ms-1">💾</button>
+          <button type="submit" class="btn btn-danger ms-1">🗑</button>          
+        </div>
+      </div>
+    </div>    
+                
+      <!-- Add task button -->
+    <div class="d-flex flex-row align-items-center bluebor mt-3">
+      <div>
+        <button type="button" class="btn btn-dark"><img src="./img/add.svg" height="40" alt="add new task button"></button>
+      </div>
+      <input type="text" class="form-control form-control-lg ms-2 me-4" id="exampleFormControlInput1"
+            placeholder="Add new task...">      
+    </div>
+
+    <!-- end of container div -->
+  </div> 
     
 </body>
 </html>
