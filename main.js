@@ -17,17 +17,22 @@ addTaskButton.addEventListener('click', (e) => {
         let div = document.createElement('div')
         div.id = `div-${id}`
         let button = document.createElement('button');
-        button.type = 'submit'
-        button.innerText = 'delete'
-        let paragraph = document.createElement('p')
-        div.classList.add('row', 'gap-2', 'col-10', 'mx-auto')
-        div.classList.add('task')
+        button.type = 'submit';
+        button.innerText = 'Delete';
+        let paragraph = document.createElement('p');
+        //creating a checkbox
+        let checkBox = document.createElement('input');
+        checkBox.type='checkbox';
+       // div.classList.add('row', 'gap-2', 'col-10', 'mx-auto')
+        div.classList.add('task');
         paragraph.innerText = addTaskInput.value;
-        taskPanel.appendChild(div)
-        div.appendChild(paragraph)
-        div.appendChild(button)
+        taskPanel.appendChild(div);
+        div.appendChild(checkBox);
+        div.appendChild(paragraph);
+        div.appendChild(button);
+        addTaskInput.value = '';
       }
-    addTaskInput.value = '';
+    
 });
 
 
