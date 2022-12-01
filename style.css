@@ -1,9 +1,35 @@
+/*initially setting all margins and padding to zero*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*styles on tasks */
 
 .task {
     /* width: 80%;
     height: 35px; */
-    background-color: aliceblue;
+    background-color: white;
+    padding: 5px 10px;
     display: flex;
     flex-direction: row;
-    border: 10px solid black;
+    justify-content: space-between;
+    align-items: center;
+   /* border: 10px solid black; */
+   border-radius: 5px;
+   margin-bottom: 10px;
+   gap: 5px;
+}
+
+.task p{
+    font-size: 16px;
+    margin: 0 5px;
+    flex-grow: 1;
+}
+/*style on delete button*/
+button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
 }
