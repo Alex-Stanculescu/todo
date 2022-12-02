@@ -31,6 +31,9 @@ addTaskButton.addEventListener('click', (e) => {
         div.appendChild(paragraph);
         div.appendChild(button);
         addTaskInput.value = '';
+        button.addEventListener('click',()=>{
+            div.remove();
+        })
       }
     
 });
